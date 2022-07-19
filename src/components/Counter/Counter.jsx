@@ -17,17 +17,17 @@ const Counter = ({ task, tasks, up }) => {
   return (
     <div className={styles.counter}>
       <button
-        onClick={() => dataUpdate(-1)}
-        data-testid="task-counter-decrement-button"
-      >
-        -
-      </button>
-      <span data-testid="task-counter-value">{task.count}</span>
-      <button
         onClick={() => dataUpdate(1)}
         data-testid="task-counter-increment-button"
       >
         +
+      </button>
+      <span data-testid="task-counter-value">{task.count}</span>
+      <button
+        onClick={() => dataUpdate(-1)}
+        data-testid="task-counter-decrement-button"
+      >
+        -
       </button>
     </div>
   );
